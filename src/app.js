@@ -12,14 +12,14 @@ import { setTextFilter } from './actions/filters';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 500, note: 'some note' }));
-store.dispatch(addExpense({ description: 'Gas bill', createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500, note: 'some note' }));
+// store.dispatch(addExpense({ description: 'Water bill', amount: 500, note: 'some note' }));
+// store.dispatch(addExpense({ description: 'Gas bill', createdAt: 1000 }));
+// store.dispatch(addExpense({ description: 'Rent', amount: 109500, note: 'some note' }));
 
 
 
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+// const state = store.getState();
+// const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 
 
 // store.subscribe(() => {
