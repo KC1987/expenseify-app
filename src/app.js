@@ -27,7 +27,7 @@ const store = configureStore();
   // });
   
   
-  console.log(visibleExpenses);
+  // console.log(visibleExpenses);
 
 
 //addExpense -> Water bill

@@ -27,10 +27,10 @@ export class EditExpensePage extends React.Component {
   };
 };
 
-const EditExpensePage = (props) => {
-   console.log(props)
+// const EditExpensePage = (props) => {
+//    console.log(props)
     
-};
+// };
 
 const mapStateToProps = (state, props) => ({
   expense: state.expenses.find( (expense) => expense.id === props.match.params.id )
