@@ -37,9 +37,19 @@ module.exports = (env) => {
                 // by default it use publicPath in webpackOptions.output
                 // publicPath: '../'
               }
-            },
-            "css-loader",
-            "sass-loader"
+            }, {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            }, {
+              loader: 'scss-loader',
+              options: {
+                sourceMap: true
+              }              
+            }
+            // "css-loader",
+            // "sass-loader"
           ]
     }]
   },
