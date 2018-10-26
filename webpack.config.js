@@ -16,7 +16,7 @@ module.exports = (env) => {
     publicPath: 'public/scripts/'
   },
   
-  watch: true,
+  watch: isProduction ? false : true,
     
   watchOptions: {
     ignored: /node_modules/
