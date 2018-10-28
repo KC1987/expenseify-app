@@ -12,8 +12,8 @@ module.exports = (env) => {
     
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, 'public/scripts/'),
-    publicPath: 'public/scripts/'
+    path: path.join(__dirname, '/public', '/dist/scripts'),
+    publicPath: 'public/dist/scripts/'
   },
   
   watch: isProduction ? false : true,
@@ -57,7 +57,7 @@ module.exports = (env) => {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "[name].css",
+      filename: "styles.css",
       chunkFilename: "[id].css"
     })
   ],
